@@ -1,0 +1,26 @@
+{
+  "plugins": [
+    "@babel/plugin-transform-modules-commonjs",
+    ["module-resolver", {
+      "root": ["./src"],
+      "extensions": [".js", ".jsx", ".ts", ".tsx", ".test.ts", ".test.tsx"],
+      "alias": {
+        "Components": "./src/Components",
+        "Styles": "./src/Styles",
+        "Utilities": "./src/Utilities",
+        "Dictionary": "./src/Dictionary",
+        "Pages": "./src/Pages",
+        "Hooks": "./src/Hooks",
+        "Recoil": "./src/Recoil",
+        "@test-utils": "./src/Tests"
+      }
+    }]
+  ],
+  "presets": [
+    "@babel/preset-typescript",
+    "@babel/preset-env",
+    "@parcel/babel-preset-env", ["@babel/preset-react", {
+      "runtime": "automatic"
+    }]
+  ]
+}

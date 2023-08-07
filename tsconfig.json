@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "es5",
+    "skipLibCheck": true,
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "baseUrl": "src",
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+  },
+  "include": ["./src", ".d.ts", ".test.ts", ".test.tsx"],
+  "exclude": [
+    "./node_modules",
+    "./build",
+    "./src/configs",
+  ],
+}
