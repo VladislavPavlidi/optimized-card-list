@@ -1,7 +1,11 @@
 import React from 'react';
 import Section from 'Components/UI/Section';
-import styles from './styles.module.scss';
+import VirtualList from 'Components/VirtualList';
 
 export default function Home() {
-  return <Section className={styles.home}>home</Section>;
+  return (
+    <Section>
+      <VirtualList />
+    </Section>
+  );
 }
