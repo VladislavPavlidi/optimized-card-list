@@ -11,16 +11,35 @@ const rowHeights = new Array(1000)
 
 export default function VirtualList() {
   return (
-    <Grid
+    <div
       className="cards"
-      columnCount={3}
-      columnWidth={(index) => 200}
-      height={1300}
-      width={1300}
-      rowCount={30}
-      rowHeight={(index) => 200}
+      // columnCount={3}
+      // columnWidth={(index) => 200}
+      // height={1300}
+      // width={1300}
+      // rowCount={30}
+      // rowHeight={(index) => 200}
     >
-      {Card}
-    </Grid>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </div>
   );
+  // return (
+  //   <Grid
+  //     className="cards"
+  //     columnCount={3}
+  //     columnWidth={(index) => 200}
+  //     height={1300}
+  //     width={1300}
+  //     rowCount={30}
+  //     rowHeight={(index) => 200}
+  //   >
+  //     {Card}
+  //   </Grid>
+  // );
 }

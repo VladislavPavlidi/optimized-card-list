@@ -1,24 +1,32 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 96px;
   width: 100%;
+  margin-top: 80px;
 }
 
 .card {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  //   width: 300px;
-  //   height: auto;
+  width: 100%;
+  color: $white;
+  background-color: $black;
 }
 
 .card__image-holder {
+  position: relative;
   display: block;
   width: 100%;
-  height: 200px;
+  height: auto;
+  padding-top: calc(100% * (3 / 4));
 
   img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
